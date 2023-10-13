@@ -32,3 +32,13 @@ function farhenheitCelsuis() {
   return celsuis;
 }
 farhenheitCelsuis();
+
+
+secondfield.addEventListener("change", (e) => {
+  const secondfieldfieldValue = e.target.value;
+  console.log(secondfieldfieldValue);
+});
+
+selectedMeasure.innerHTML = measurements.map(
+  (item) => `<option value=${item.value}>${item.name}</option>`
+);
