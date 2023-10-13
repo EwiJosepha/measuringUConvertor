@@ -24,11 +24,18 @@ body {
   border: 1px solid linear-gradient(to bottom, #dee3e5 50%, #dee3e5 50%);
   /* border-radius: 8px; */
   border: none;
-  background: linear-gradient(to bottom, #2eade0 50%, #2eade0 50%)
+  background: linear-gradient(90deg, #65c5eb 70%, #26b4ec 30%)
 }
 
 .top-section {
   width: 33%;
+}
+
+.arrow {
+  background-color: #000;
+  height: 30px;
+  position: fixed;
+  margin-top: -5;
 }
 
 
@@ -71,7 +78,8 @@ h1 {
   padding-top: 40px;
   padding: 30px;
   color: #fff;
-  background-color: #2eade0;
+  background-color: #26b4ec;
+  flex-wrap: wrap;
 }
 
 .inputfield-select input {
@@ -80,13 +88,13 @@ h1 {
   border-top: none;
   border-left: none;
   border-right: none;
-  background-color: #2eade0;
+  background-color:  #26b4ec ;
   outline: none;
 }
 
 .wrapper2 input {
   padding-top: 30px;
-  border-bottom: 5px solid #2eade0;
+  border-bottom: 5px solid #26b4ec;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -96,7 +104,7 @@ h1 {
 select {
   padding-top: 3px;
   border: none;
-  background-color: #2eade0;
+  background-color: #26b4ec;
   color: #fff;
   font-size: 15px;
 }
@@ -115,5 +123,13 @@ select {
 #input-field {
   padding-bottom: 30px;
   outline: none;
+}
+
+#blue {
+  color: #2eade0;
+}
+
+#white {
+  padding-top: 15px;
 }
 
