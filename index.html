@@ -1,53 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/styles/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <title>Measuring Unit Converter</title>
-</head>
-<body>
-  <div class="wrapper">
-    <div class="top-sec">
-      <div class="date-icon">
-        <p>03.Thurs.2023</p>
-        <img src="./assets/images/navbar-toggler.png" alt="Toogler">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Measuring Unit Converter</title>
+  </head>
+  <body>
+    <div class="global-wrapper">
+      <div class="wrapper">
+        <div class="top-sec">
+          <div class="date-icon">
+            <p>03.Thurs.2023</p>
+            <img src="./assets/images/navbar-toggler.png" alt="Toogler" />
+          </div>
+          <h1>Length</h1>
+          <div class="inputfield-select">
+            <div id="div1"></div>
+            <select id="first-measure"></select>
+            <p id="white">Meters</p>
+          </div>
+        </div>
       </div>
-      <h1>Degree</h1>
-      <div class="inputfield-select">
-        <input type="text" id="field-input">
-        <select id="first-measure">
-          <option disabled>Select an Option</option>
-          <!-- <option value="Meters">Meters</option>
-          <option value="Ferenheit">Ferenheit</option>
-          <option value="celsuis">celsuis</option> -->
-        </select>
-        <p id="white">Degrees</p>
+    
+      <div class=" wrapper2">
+        <h2 class="header">Lenght</h2>
+
+        <div class="arrow">
+          <img src="./assets/images/navbar-toggler.png" alt="Toogler" id="img" />
+        </div>
+        <div class="wrapper3">
+        <div class="bottom-sec">
+          <div id="div2"></div>
+          <select class="selected" id="second-measure"></select>
+          <p id="blue">Meters</p>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="wrapper2">
-    <div class="arrow">
-      <img src="./assets/images/navbar-toggler.png" alt="Toogler">
-
-    </div>
-
-    <div class="bottom-sec">
-      <h1 class="header">Lenght</h1>
-      <input type="text" id="field-input2">
-      <select class="selected" id="second-measure">
-        <!-- <option value="meters">Meters</option>
-        <option value="Ferenheit">Ferenheit</option>
-        <option value="centimetters">centimetters</option> -->
-      </select>
-      <!-- <p id="blue">Degrees</p> -->
+      <script src="./assets/script/newscript.js"></script>
     </div>
     </div>
-  
-   
-  
-
-  <script src="assets/script/script.js"></script>
-</body>
+  </body>
 </html>

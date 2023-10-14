@@ -49,7 +49,7 @@ inputfield1.addEventListener("change", (e) => {
   fieldValue = e.target.value;
   console.log(fieldValue);
   convertor(fieldValue)
-  convertor ({fieldValue, measureselected, measureselected2 })
+  convertor(fieldValue, measureselected, measureselected2)
 
 });
 
@@ -60,24 +60,24 @@ selectedMeasure.addEventListener("change", () => {
   measureselected = selectedMeasure.value
   console.log(measureselected);
 
-  convertor ({fieldValue, measureselected, measureselected2 })
+  // convertor ({fieldValue, measureselected, measureselected2 })
 });
 
 // render measurement units for second input field
 
-  selectedMeasure2.innerHTML = measurements.map(
-    (item) => `<option value=${item.value}>${item.name}</option>`
-  );
-  console.log(measurements);
+selectedMeasure2.innerHTML = measurements.map(
+  (item) => `<option value=${item.value}>${item.name}</option>`
+);
+console.log(measurements);
 
 
 // get the value or unit from which user is about to convert to.(unit to)
 
 let measureselected2;
-selectedMeasure2.addEventListener('change', ()=>{
+selectedMeasure2.addEventListener('change', () => {
   measureselected2 = selectedMeasure2.value
   console.log(measureselected2);
-  convertor ({fieldValue, measureselected, measureselected2 })
+  convertor({ fieldValue, measureselected, measureselected2 })
 
 })
 
@@ -87,21 +87,32 @@ selectedMeasure2.addEventListener('change', ()=>{
 
 //function to convert
 console.log('hey');
-function convertor ({val, from, to }) {
-  for(let i = 0; i < from; i++){
-    if(measurements.from[i] > measurements.to[i]){
-      const res = val/ measurements.to[i]
+function convertor(val, from, to) {
+  for (let i = 0; i < measurements.length; i++) {
+    if (from > to) {
+      console.log(from);
+      const res = val / to
       console.log(res);
-    }else if(measurements.from[i] < measurements.to[i]){
-      const ans = val * measurements.to[i]
-    }else if(measurements.from[i]=== measurements.to[i]){
+    } else if (from < to) {
+      const ans = val * to
+    } else if (from === to) {
       return alert('units must be different')
-    }else {
+    } else {
       console.log('come next');
     }
   }
- 
+
 }
+
+//second inputfield
+
+let fieldValue2;
+inputfield2.addEventListener("change", (e) => {
+  fieldValue2 = e.target.value;
+  console.log(fieldValue2);
+  convertor(fieldValue2)
+});
+
 
 
 
