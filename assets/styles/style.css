@@ -17,6 +17,7 @@ body {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   width: 40%;
+  max-width: 750px;
   height: 200px;
   flex-direction: column;
   background-color: #ece3e3;
@@ -32,6 +33,7 @@ body {
 .bottom-sec {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .arrow {
@@ -51,7 +53,8 @@ margin-right: 0;
   /* justify-content: space-between; */
   margin: 0 auto;
   width: 40%;
-  height: 250px;
+  max-width: 750px;
+  height: 200px;
   background-color: #ece3e3;
   border: 1px solid linear-gradient(to bottom, #dedbdb 50%, #dedbdb 50%);
   border-bottom-left-radius: 8px;
@@ -104,7 +107,8 @@ h1 {
 }
 
 .inputfield-select input {
-  padding-top: 30px;
+  width: 35%;
+  /* padding-top: 30px; */
   border-bottom: 5px solid #fff;
   border-top: none;
   border-left: none;
@@ -115,6 +119,7 @@ h1 {
 }
 
 .wrapper2 input {
+  width: 30%;
   padding-top: 30px;
   border-bottom: 5px solid #26b4ec;
   border-top: none;
@@ -132,7 +137,7 @@ select {
 }
 
 .header {
-  padding: 30px;
+  padding: 10px;
   color: #26b4ec;
 }
 
@@ -143,7 +148,7 @@ h2 {
 .selected{
   color: #2eade0;
   background-color: #fff;
-  padding-left: 10px;
+  /* padding: 10px; */
 }
 
 #second-measure {
@@ -151,12 +156,12 @@ h2 {
 }
 
 #field-input2 {
-  padding-bottom: 30px;
   outline: none;
   color: #26b4ec;
 }
 
 #blue {
+  padding-top: 10px;
   color: #2eade0;
 }
 

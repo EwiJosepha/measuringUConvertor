@@ -19,10 +19,6 @@ const measurements = [
     value: 1,
   },
   {
-    name: "millimeters",
-    value: 1,
-  },
-  {
     name: "centimetters",
     value: 10,
   },
@@ -82,7 +78,7 @@ secoundMeasure.addEventListener('change', () => {
 // add input from javascript 
 div2.innerHTML = `<input value=${inputValue} type="text" id="field-input2">`
 // add input2 from javascript
-div1.innerHTML = `<input value=${inputValue} type="text" id="field-input">`
+div1.innerHTML = `<input value=${inputValue1} type="text" id="field-input">`
 
 const firstInput = document.getElementById('field-input')
 const secondInput = document.getElementById('field-input2')
